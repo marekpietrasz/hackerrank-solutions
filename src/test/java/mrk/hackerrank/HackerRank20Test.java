@@ -7,19 +7,21 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
 
-class HackerRank18Test {
+import static org.junit.jupiter.api.Assertions.*;
 
+class HackerRank20Test {
     private static Stream<Arguments> testData() {
         return Stream.of(
-                Arguments.of(9, new int[]{10, 20, 20, 10, 10, 30, 50, 10, 20}, 3),
-                Arguments.of(3, new int[]{1, 2, 3}, 0),
-                Arguments.of(3, new int[]{1, 1, 1}, 1));
+                Arguments.of(6, 2, 1),
+                Arguments.of(6, 1, 0),
+                Arguments.of(5, 4, 0),
+                Arguments.of(6, 6, 0),
+                Arguments.of(6, 5, 1));
     }
-
     @ParameterizedTest
     @MethodSource("testData")
-    void test(int n, int[] arr, int result) {
-        Assertions.assertEquals(result, new HackerRank18().sockMerchant(n, arr));
+    void test(int n, int p, int result) {
+        Assertions.assertEquals(result, new HackerRank20().pageCount(n, p));
     }
 
 }
