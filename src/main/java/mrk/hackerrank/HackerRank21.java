@@ -1,5 +1,6 @@
 package mrk.hackerrank;
 
+//https://www.hackerrank.com/challenges/electronics-shop/problem
 public class HackerRank21 {
     public int getMoneySpent(int[] keyboards, int[] drives, int b) {
         int result = -1;

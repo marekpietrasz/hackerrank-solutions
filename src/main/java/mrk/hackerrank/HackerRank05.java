@@ -3,6 +3,7 @@ package mrk.hackerrank;
 import java.util.Arrays;
 import java.util.stream.LongStream;
 
+//https://www.hackerrank.com/challenges/mini-max-sum/problem
 public class HackerRank05 {
 
     private LongStream createLongStream(int[]arr){

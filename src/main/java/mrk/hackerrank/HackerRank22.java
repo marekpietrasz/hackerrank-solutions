@@ -1,5 +1,6 @@
 package mrk.hackerrank;
 
+//https://www.hackerrank.com/challenges/cats-and-a-mouse/problem
 public class HackerRank22 {
     public String catAndMouse(int x, int y, int z) {
         int catADistance = Math.abs(z - x);

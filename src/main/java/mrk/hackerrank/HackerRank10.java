@@ -1,5 +1,6 @@
 package mrk.hackerrank;
 
+//https://www.hackerrank.com/challenges/kangaroo/problem
 public class HackerRank10 {
     public String kangaroo(int x1, int v1, int x2, int v2) {
 

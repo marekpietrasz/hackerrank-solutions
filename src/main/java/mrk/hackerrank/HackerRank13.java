@@ -1,8 +1,8 @@
 package mrk.hackerrank;
 
-import java.util.Arrays;
 import java.util.List;
 
+//https://www.hackerrank.com/challenges/the-birthday-bar/problem
 public class HackerRank13 {
     public int birthday(List<Integer> list, int sum, int size) {
         int total = 0;

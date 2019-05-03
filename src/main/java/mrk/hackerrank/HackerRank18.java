@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
+//https://www.hackerrank.com/challenges/sock-merchant/problem
 public class HackerRank18 {
     public int sockMerchant(int n, int[] ar) {
         return Arrays.stream(ar)

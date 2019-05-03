@@ -3,6 +3,7 @@ package mrk.hackerrank;
 import java.util.Arrays;
 import java.util.stream.IntStream;
 
+//https://www.hackerrank.com/challenges/between-two-sets/problem
 public class HackerRank11 {
 
     public int getTotalX(int[] a, int[] b) {

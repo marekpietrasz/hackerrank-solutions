@@ -3,6 +3,7 @@ package mrk.hackerrank;
 import java.util.function.Function;
 import java.util.stream.IntStream;
 
+//https://www.hackerrank.com/challenges/divisible-sum-pairs/problem
 public class HackerRank14 {
     public int divisibleSumPairs(int n, int k, int[] ar) {
 

@@ -1,9 +1,8 @@
 package mrk.hackerrank;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Function;
 
+//https://www.hackerrank.com/challenges/bon-appetit/problem
 public class HackerRank17 {
 
     public void bonAppetit(List<Integer> bill, int k, int b) {

@@ -1,5 +1,7 @@
 package mrk.hackerrank;
 
+//https://www.hackerrank.com/challenges/magic-square-forming/problem
+
 public class HackerRank23 {
     private static final int[][] MAGIC_SQUARE = new int[][]{new int[]{4, 9, 2}, new int[]{3, 5, 7}, new int[]{8, 1, 6}};
 

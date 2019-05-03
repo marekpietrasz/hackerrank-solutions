@@ -1,11 +1,10 @@
 package mrk.hackerrank;
 
-import com.google.common.collect.Streams;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.IntStream;
 
+//https://www.hackerrank.com/challenges/compare-the-triplets/problem
 public class HackerRank04 {
 
     public List<Integer> compareTriplets(List<Integer> a, List<Integer> b) {

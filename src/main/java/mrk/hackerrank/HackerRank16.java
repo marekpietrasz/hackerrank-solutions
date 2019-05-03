@@ -7,7 +7,7 @@ import java.util.function.Function;
 import java.util.function.ToLongFunction;
 import java.util.stream.Collectors;
 
-
+//https://www.hackerrank.com/challenges/migratory-birds/problem
 public class HackerRank16 {
     public int migratoryBirds(List<Integer> arr) {
         Map<Integer, Long> numberToCount = arr

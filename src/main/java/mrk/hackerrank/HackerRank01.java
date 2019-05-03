@@ -2,10 +2,7 @@ package mrk.hackerrank;
 
 import java.util.Arrays;
 
-import java.util.Collections;
-import java.util.function.Function;
-import java.util.stream.IntStream;
-
+//https://www.hackerrank.com/challenges/birthday-cake-candles/problem
 public class HackerRank01 {
 
     public int birthdayCakeCandles(int[] ar) {

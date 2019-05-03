@@ -1,7 +1,7 @@
 package mrk.hackerrank;
 
 import java.util.stream.IntStream;
-
+//https://www.hackerrank.com/challenges/diagonal-difference/problem
 public class HackerRank06 {
     public int diagonalDifference(int[][] arr) {
         int length = arr.length;
