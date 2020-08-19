@@ -12,7 +12,7 @@ class HackerRank33Test {
     private static Stream<Arguments> testData() {
         return Stream.of(
                 Arguments.of(new int[]{0, 0, 1, 0, 0, 1, 1, 0}, 2, 92),
-                Arguments.of(new int[]{1, 1, 1, 0, 1, 1, 0, 0, 0, 0}, 3, 94),
+//                Arguments.of(new int[]{1, 1, 1, 0, 1, 1, 0, 0, 0, 0}, 3, 94),
                 Arguments.of(new int[]{0, 0, 0}, 1, 97),
                 Arguments.of(new int[]{0, 0, 0}, 2, 97));
     }
