@@ -19,6 +19,17 @@ class HackerrankTests {
         Assertions.assertEquals(output, hackerRank02(input))
     }
 
+    //not a real test
+    @Test
+    fun test_hackerRank03() {
+        hackerRank03(arrayOf(1, 1, 1, 0, 0, 0, 0, -1 - 1 - 1))
+    }
+
+    @Test
+    fun test_hackerRank04() {
+        Assertions.assertEquals(arrayOf(1, 1).asList(), hackerRank04(arrayOf(5, 6, 7), arrayOf(3, 6, 10)).asList())
+    }
+
     companion object {
         @JvmStatic
         fun hackerRank01Data() =
@@ -27,6 +38,7 @@ class HackerrankTests {
                         Arguments.of(arrayOf(1, 1, 1, 1), 4),
                         Arguments.of(emptyArray<Int>(), 0)
                 )
+
         @JvmStatic
         fun hackerRank02Data() =
                 listOf(
@@ -35,6 +47,5 @@ class HackerrankTests {
                         Arguments.of(3, "  #\n ##\n###"),
                         Arguments.of(4, "   #\n  ##\n ###\n####")
                 )
-
     }
 }
