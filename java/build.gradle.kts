@@ -7,11 +7,11 @@ plugins {
 }
 
 dependencies {
-    implementation("com.google.guava:guava:33.4.8-jre")
+    implementation("com.google.guava:guava:${Versions.guava}")
     testImplementation("org.junit.jupiter:junit-jupiter-engine:${Versions.junit}")
     testImplementation("org.junit.jupiter:junit-jupiter-params:${Versions.junit}")
     testImplementation("org.mockito:mockito-core:${Versions.mockito}")
-    testRuntimeOnly("org.junit.platform:junit-platform-launcher:1.6.2")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher:${Versions.junitPlatformLauncher}")
 }
 
 java {
