@@ -1,7 +1,5 @@
 package mrk.hackerrank;
 
-import java.util.Arrays;
-
 //https://www.hackerrank.com/challenges/birthday-cake-candles/problem
 public class HackerRank01 {
 
