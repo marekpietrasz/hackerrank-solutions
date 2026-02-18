@@ -1,7 +1,5 @@
 package mrk.hackerrank;
 
-import org.checkerframework.common.value.qual.IntRange;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
