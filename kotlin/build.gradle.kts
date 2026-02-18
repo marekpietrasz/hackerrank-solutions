@@ -1,10 +1,13 @@
 repositories {
     mavenCentral()
-    jcenter()
 }
 
 plugins {
     kotlin("jvm") version Versions.kotlin
+}
+
+kotlin {
+    jvmToolchain(25)
 }
 
 dependencies {
@@ -13,27 +16,10 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter-engine:${Versions.junit}")
     testImplementation("org.junit.jupiter:junit-jupiter-params:${Versions.junit}")
     testImplementation("org.mockito:mockito-core:${Versions.mockito}")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher:1.6.2")
 }
 
 tasks {
-    compileKotlin {
-        kotlinOptions.jvmTarget = "1.8"
-        kotlinOptions.freeCompilerArgs += listOf(
-                "-Xuse-experimental=kotlin.Experimental",
-                "-Xuse-experimental=io.ktor.util.KtorExperimentalAPI",
-                "-Xuse-experimental=kotlinx.coroutines.ObsoleteCoroutinesApi",
-                "-Xuse-experimental=kotlinx.coroutines.ExperimentalCoroutinesApi"
-        )
-    }
-    compileTestKotlin {
-        kotlinOptions.jvmTarget = "1.8"
-        kotlinOptions.freeCompilerArgs += listOf(
-                "-Xuse-experimental=kotlin.Experimental",
-                "-Xuse-experimental=io.ktor.util.KtorExperimentalAPI",
-                "-Xuse-experimental=kotlinx.coroutines.ObsoleteCoroutinesApi"
-        )
-    }
-
     named<Test>("test") {
         useJUnitPlatform()
     }

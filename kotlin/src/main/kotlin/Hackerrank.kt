@@ -2,7 +2,7 @@ import java.text.DecimalFormat
 
 //https://www.hackerrank.com/challenges/birthday-cake-candles/problem
 fun hackerRank01(arr: Array<Int>): Int =
-        (arr.max() ?: 0).let { max ->
+        (arr.maxOrNull() ?: 0).let { max ->
             arr.filter { it == max }.count()
         }
 
