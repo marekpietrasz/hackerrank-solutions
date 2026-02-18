@@ -6,7 +6,11 @@ import java.util.Arrays;
 public class HackerRank01 {
 
     public int birthdayCakeCandles(int[] ar) {
-        int max = Arrays.stream(ar).max().orElse(0);
-        return (int) Arrays.stream(ar).filter(e -> e == max).count();
+        int max = 0, count = 0;
+        for (int candle : ar) {
+            if (candle > max) { max = candle; count = 1; }
+            else if (candle == max) count++;
+        }
+        return count;
     }
 }
