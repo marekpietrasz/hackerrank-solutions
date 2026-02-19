@@ -10,9 +10,9 @@ public class HackerRank05 {
         return Arrays.stream(arr).mapToLong(i -> i);
     }
 
-    private void miniMaxSum(int[] arr) {
+    public String miniMaxSum(int[] arr) {
         Arrays.sort(arr);
-        System.out.printf("%d %d", createLongStream(arr).limit(4).sum(), createLongStream(arr).skip(1).sum());
+        return String.format("%d %d", createLongStream(arr).limit(4).sum(), createLongStream(arr).skip(1).sum());
     }
 
 }
