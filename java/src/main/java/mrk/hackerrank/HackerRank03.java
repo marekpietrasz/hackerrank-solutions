@@ -1,5 +1,6 @@
 package mrk.hackerrank;
 
+import com.google.common.base.Preconditions;
 import java.util.Arrays;
 import java.util.function.IntPredicate;
 
@@ -15,6 +16,7 @@ public class HackerRank03 {
     }
 
     public String plusMinus(int[] arr) {
+        Preconditions.checkArgument(arr.length >= 1 && arr.length <= 100, "arr size must be in 1..100, was %s", arr.length);
         return String.join("\n",
                 formatLine(calculateNumber(arr, e -> e > 0)),
                 formatLine(calculateNumber(arr, e -> e < 0)),

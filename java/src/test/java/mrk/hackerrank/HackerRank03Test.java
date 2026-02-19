@@ -24,4 +24,17 @@ class HackerRank03Test {
     void test(int[] arr, String expected) {
         Assertions.assertEquals(expected, new HackerRank03().plusMinus(arr));
     }
+
+    @ParameterizedTest
+    @MethodSource("invalidInputs")
+    void testInvalidInput(int[] arr) {
+        Assertions.assertThrows(IllegalArgumentException.class, () -> new HackerRank03().plusMinus(arr));
+    }
+
+    private static Stream<Arguments> invalidInputs() {
+        return Stream.of(
+                Arguments.of(new int[]{}),
+                Arguments.of(new int[101])
+        );
+    }
 }
