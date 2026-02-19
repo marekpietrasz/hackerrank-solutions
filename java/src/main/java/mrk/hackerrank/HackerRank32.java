@@ -2,8 +2,6 @@ package mrk.hackerrank;
 
 //https://www.hackerrank.com/challenges/permutation-equation/problem
 
-import java.util.stream.IntStream;
-
 public class HackerRank32 {
 
     public int[] permutationEquation(int[] p) {

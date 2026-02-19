@@ -1,7 +1,6 @@
 package mrk.hackerrank;
 
 import com.google.common.base.Preconditions;
-import java.util.Collections;
 import java.util.stream.IntStream;
 
 //https://www.hackerrank.com/challenges/staircase/problem
