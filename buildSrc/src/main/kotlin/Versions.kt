@@ -4,5 +4,6 @@ object Versions {
     const val junit = "5.6.2"
     const val junitPlatformLauncher = "1.6.2"
     const val kotlin = "2.3.10"
+    const val ktlint = "12.1.2"
     const val mockito = "1.10.19"
 }

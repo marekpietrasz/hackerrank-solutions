@@ -4,6 +4,7 @@ repositories {
 
 plugins {
     kotlin("jvm") version Versions.kotlin
+    id("org.jlleitschuh.gradle.ktlint") version Versions.ktlint
 }
 
 kotlin {

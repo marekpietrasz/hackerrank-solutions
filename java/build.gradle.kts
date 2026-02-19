@@ -4,6 +4,12 @@ repositories {
 
 plugins {
     id("java")
+    checkstyle
+}
+
+checkstyle {
+    toolVersion = "10.21.4"
+    configFile = rootProject.file("config/checkstyle/checkstyle.xml")
 }
 
 dependencies {
