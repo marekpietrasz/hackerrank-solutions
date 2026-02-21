@@ -3,21 +3,21 @@ repositories {
 }
 
 plugins {
-    kotlin("jvm") version Versions.kotlin
-    id("org.jlleitschuh.gradle.ktlint") version Versions.ktlint
+    alias(libs.plugins.kotlin.jvm)
+    alias(libs.plugins.ktlint)
 }
 
 kotlin {
-    jvmToolchain(Versions.java)
+    jvmToolchain(libs.versions.java.get().toInt())
 }
 
 dependencies {
     implementation(kotlin("stdlib"))
-    implementation("com.google.guava:guava:${Versions.guava}")
-    testImplementation("org.junit.jupiter:junit-jupiter-engine:${Versions.junit}")
-    testImplementation("org.junit.jupiter:junit-jupiter-params:${Versions.junit}")
-    testImplementation("org.mockito:mockito-core:${Versions.mockito}")
-    testRuntimeOnly("org.junit.platform:junit-platform-launcher:${Versions.junitPlatformLauncher}")
+    implementation(libs.guava)
+    testImplementation(libs.junit.jupiter.engine)
+    testImplementation(libs.junit.jupiter.params)
+    testImplementation(libs.mockito.core)
+    testRuntimeOnly(libs.junit.platform.launcher)
 }
 
 tasks {

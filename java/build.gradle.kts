@@ -8,16 +8,16 @@ plugins {
 }
 
 checkstyle {
-    toolVersion = "10.21.4"
+    toolVersion = libs.versions.checkstyle.get()
     configFile = rootProject.file("config/checkstyle/checkstyle.xml")
 }
 
 dependencies {
-    implementation("com.google.guava:guava:${Versions.guava}")
-    testImplementation("org.junit.jupiter:junit-jupiter-engine:${Versions.junit}")
-    testImplementation("org.junit.jupiter:junit-jupiter-params:${Versions.junit}")
-    testImplementation("org.mockito:mockito-core:${Versions.mockito}")
-    testRuntimeOnly("org.junit.platform:junit-platform-launcher:${Versions.junitPlatformLauncher}")
+    implementation(libs.guava)
+    testImplementation(libs.junit.jupiter.engine)
+    testImplementation(libs.junit.jupiter.params)
+    testImplementation(libs.mockito.core)
+    testRuntimeOnly(libs.junit.platform.launcher)
 }
 
 java {
