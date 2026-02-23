@@ -12,7 +12,7 @@ public class HackerRank03 {
     }
 
     private String formatLine(double number) {
-        return String.format("%.4f", number);
+        return String.format("%.6f", number);
     }
 
     public String plusMinus(int[] arr) {
