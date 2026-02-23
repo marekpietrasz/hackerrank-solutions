@@ -1,6 +1,6 @@
 [versions]
 checkstyle = "10.21.4"
-guava = "33.4.8-jre"
+guava = "33.5.0-jre"
 java = "25"
 junit = "6.0.3"
 junit-platform-launcher = "1.6.2"
