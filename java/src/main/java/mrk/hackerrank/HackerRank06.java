@@ -3,7 +3,6 @@ package mrk.hackerrank;
 import com.google.common.base.Preconditions;
 
 import java.util.Arrays;
-import java.util.stream.IntStream;
 
 //https://www.hackerrank.com/challenges/diagonal-difference/problem
 public class HackerRank06 {
@@ -12,10 +11,11 @@ public class HackerRank06 {
                 Arrays.stream(arr).flatMapToInt(Arrays::stream).allMatch(e -> e >= -100 && e <= 100),
                 "all elements must be in -100..100");
         int length = arr.length;
-        int[] diff = IntStream.range(0, length)
-                .mapToObj(i -> new int[]{arr[i][i], arr[i][length - i - 1]})
-                .reduce(new int[] {0, 0}, (acc, curr) -> new int[] {acc[0] + curr[0], acc[1] + curr[1]});
-        return Math.abs(diff[0] - diff[1]);
-
+        int primary = 0, secondary = 0;
+        for (int i = 0; i < length; i++) {
+            primary += arr[i][i];
+            secondary += arr[i][length - i - 1];
+        }
+        return Math.abs(primary - secondary);
     }
 }
