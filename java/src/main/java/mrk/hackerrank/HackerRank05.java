@@ -1,19 +1,18 @@
 package mrk.hackerrank;
 
-import java.util.Arrays;
-import java.util.stream.LongStream;
+import com.google.common.base.Preconditions;
 
 //https://www.hackerrank.com/challenges/mini-max-sum/problem
 public class HackerRank05 {
 
-    private LongStream createLongStream(int[]arr){
-        return Arrays.stream(arr).mapToLong(i -> i);
-    }
-
     public String miniMaxSum(int[] arr) {
-        int[] sorted = arr.clone();
-        Arrays.sort(sorted);
-        return String.format("%d %d", createLongStream(sorted).limit(4).sum(), createLongStream(sorted).skip(1).sum());
+        Preconditions.checkArgument(arr.length == 5, "arr must have length 5, was %s", arr.length);
+        long total = arr[0], min = arr[0], max = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            total += arr[i];
+            if (arr[i] < min) min = arr[i];
+            if (arr[i] > max) max = arr[i];
+        }
+        return String.format("%d %d", total - max, total - min);
     }
-
 }
