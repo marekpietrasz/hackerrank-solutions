@@ -11,8 +11,9 @@ public class HackerRank05 {
     }
 
     public String miniMaxSum(int[] arr) {
-        Arrays.sort(arr);
-        return String.format("%d %d", createLongStream(arr).limit(4).sum(), createLongStream(arr).skip(1).sum());
+        int[] sorted = arr.clone();
+        Arrays.sort(sorted);
+        return String.format("%d %d", createLongStream(sorted).limit(4).sum(), createLongStream(sorted).skip(1).sum());
     }
 
 }
