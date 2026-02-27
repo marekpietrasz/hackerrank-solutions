@@ -12,7 +12,11 @@ public class HackerRank07Test {
     private static Stream<Arguments> timeConversionArguments() {
         return Stream.of(
                 Arguments.of("07:05:45PM", "19:05:45"),
-                Arguments.of("12:00:00AM", "00:00:00")
+                Arguments.of("12:00:00AM", "00:00:00"),
+                Arguments.of("12:00:00PM", "12:00:00"),
+                Arguments.of("12:01:00AM", "00:01:00"),
+                Arguments.of("01:00:00AM", "01:00:00"),
+                Arguments.of("11:59:59PM", "23:59:59")
         );
     }
 
