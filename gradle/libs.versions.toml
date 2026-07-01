@@ -2,7 +2,7 @@
 checkstyle = "10.21.4"
 guava = "33.6.0-jre"
 java = "25"
-junit = "6.1.0"
+junit = "6.1.1"
 junit-platform-launcher = "6.1.0"
 kotlin = "2.3.21"
 ktlint = "14.2.0"
